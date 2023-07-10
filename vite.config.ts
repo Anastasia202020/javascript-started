@@ -1,3 +1,3 @@
 export default {
-    base: '/JAVASCRIPT-STARTED/'
+    base: '/javascript-started/'
 }
