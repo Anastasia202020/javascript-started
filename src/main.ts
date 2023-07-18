@@ -44,4 +44,34 @@ import './style.css'
 // let h = parseInt(`${(tipH*60-hours*60-minutes)/60}`)
 // alert(`часов ${h}
 // минут ${tipM-minutes}`)
-
+// Задача 1
+// let name = prompt('Введите имя ','')
+// alert(`Привет, ${name}`)
+// Задача 2
+// const nowYear = 2023
+// let birthYear = parseFloat(prompt('Введите год рождения ','') as string)
+// alert(nowYear-birthYear)
+// Задача 3
+// let a = parseFloat(prompt('Введите длину стороны квадрата ','') as string)
+// alert(a*4)
+// Задача 4
+// const p = 3.14
+// let a = parseFloat(prompt('Введите длину окружности ','') as string)
+// alert((a*a)/(4*p))
+// Задача 5
+// let a = parseFloat(prompt('Введите колличество километров ','') as string)
+// let b = parseFloat(prompt('Введите колличество часов ','') as string)
+// alert(a/b)
+// Задача 6
+// const doll = 1.13
+// let a = parseFloat(prompt('Введите колличество долларов ','') as string)
+// alert(a/doll)
+// Задача 7
+// let a = parseInt(prompt('Введите колличество гигабайт ','') as string)
+// alert(a*1000/820)
+// Задача 8
+// let a = parseInt(prompt('Введите колличество денег ','') as string)
+// let b = parseInt(prompt('Введите цену шоколада ','') as string)
+// let x = Math.round(a/b)
+// alert(`можешь купить шоколадок ${x}
+// останется сдачи ${a-(x*b)}`)
