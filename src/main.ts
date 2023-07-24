@@ -75,3 +75,86 @@ import './style.css'
 // let x = Math.round(a/b)
 // alert(`можешь купить шоколадок ${x}
 // останется сдачи ${a-(x*b)}`)
+
+// let company = prompt('Какое официальное название JavaScript?','')
+// if (company == 'ECMAScript') {
+//     alert('Верно!');
+// } else {
+//     alert('Не знаете? ECMAScript')}
+
+// let value = prompt('Введите число', 0);
+
+// if (value > 0) {
+//   alert( 1 );
+// } else if (value < 0) {
+//   alert( -1 );
+// } else {
+//   alert( 0 );
+// }
+
+// let a = prompt('Введите первое число','');
+// let b = prompt('Введите второе число','')
+// let c = (a + b <4)?'мало':
+// 'Много';
+// alert(c)
+
+// let login = prompt('Введите логин','');
+
+// let message = (login == 'Сотрудник')?'Привет':
+// (login == 'Директор')?'Здравствуйте':
+// (login == '')?'Нет логина':
+// '';
+// alert(message)
+
+// let number = +(prompt('Введите число','') as string)
+// if (number >= 14 && number <= 90) {
+//     alert('Включен')
+// } else {
+//     alert('Не включен')
+// }
+// let number = +(prompt('Введите число','') as string)
+// if (number !>=14 && number !<=90) {
+//     alert('Включен')
+// } else {
+//     alert('Не включен')
+// }
+
+// let number = +(prompt('Введите число','') as string)
+// if (number <=14 && number >=90) {
+//     alert('Не Включен')
+// } else {
+//     alert('включен')
+// }
+
+// let userName = prompt("Кто там?", '');
+
+// if (userName === 'Админ') {
+
+//   let pass = prompt('Пароль?', '');
+
+//   if (pass === 'Я главный') {
+//     alert( 'Здравствуйте!' );
+//   } else if (pass === '' || pass === null) {
+//     alert( 'Отменено' );
+//   } else {
+//     alert( 'Неверный пароль' );
+//   }
+
+// } else if (userName === '' || userName === null) {
+//   alert( 'Отменено' );
+// } else {
+//   alert( "Я вас не знаю" );
+// }
+
+let x = +(prompt('Введите число','') as string)
+switch (x) {
+    case (x<0): 
+    alert('Отрицательное');
+    break;
+    case (x==0):
+    alert('Равен нулю');
+    break;
+    case(x>0):
+    alert('Положительное');
+    break;
+}
