@@ -146,15 +146,107 @@ import './style.css'
 //   alert( "Я вас не знаю" );
 // }
 
-let x = +(prompt('Введите число','') as string)
-switch (x) {
-    case (x<0): 
-    alert('Отрицательное');
-    break;
-    case (x==0):
-    alert('Равен нулю');
-    break;
-    case(x>0):
-    alert('Положительное');
-    break;
-}
+// let x = +(prompt('Введите число','') as string)
+// switch (x) {
+//     case (x<0): 
+//     alert('Отрицательное');
+//     break;
+//     case (x==0):
+//     alert('Равен нулю');
+//     break;
+//     case(x>0):
+//     alert('Положительное');
+//     break;
+// }
+
+// const number = +(prompt('Введите число между 0 и 3', '') as string)
+// switch (number) {
+//   case 0:
+//     alert('Вы ввели 0');
+//     break;
+//   case 1:
+//     alert('Вы ввели 1');
+//     break;
+//   case 2:
+//   case 3:
+//     alert('Вы ввели число 2, а может и 3');
+//     break;
+//   default:
+//     alert('Фигня какая то ввелась')
+// }
+// let i = 0;
+// while (i < 3) {
+//   alert( `number ${i}!` );
+//   i++
+// }
+// let i = 0
+// while (i<=100) {
+//   i = +(prompt('Введите число больше 100','') as string);
+//   if (!i) break; 
+// }
+// while(false) {
+//   console.log('Никогда не выполнится')
+// }
+// while(true) {
+//   console.log('Выполнится только раз, так как дальше break')
+//   break
+// }
+// do {
+//   console.log('Выполнится раз тк условие ложно')
+// } while(false)
+// let n = 10
+// for (let i = 2; i<=n;i++) {
+//   let isSimple = true
+//   for(let j=2; j<i; j++) {
+//     if (i%j==0) {
+//       isSimple = false
+//      break
+//     }
+//   }
+// }
+
+// n = 10
+// number: for (let i=2; i<=n; i++) {
+//   for (let j = 2;j<i;j++) {
+//     if (i%j==0) {
+//       continue number
+//     }
+//   }
+// }
+
+// let sum = 0;
+
+// let a = +(prompt("Введите число", '') as string);
+// let b = +(prompt("Введите второе число", '')as string);
+
+// if (a<b) {
+//   // Если b всегда больше a
+//   while (a<=b) {
+//     sum+=a
+//     a++
+//   }
+// } else {
+//   // Если a всегда больше b
+//   while (a>=b) {
+//     sum+=a
+//     a--
+//   }
+// }
+// alert( `Сумма:  ${sum}`);
+
+// while (true) {
+//   sum = sum+a
+//   console.log(a,sum)
+//   if (a==b) break
+//   if (a<b) {
+//     a++
+//   }
+//   if (a>b) {
+//     a--
+//   }
+// }
+// alert( `Сумма:  ${sum}`);
+
+let i = 10;
+
+let a = +(prompt("Введите число", '') as string);
