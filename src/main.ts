@@ -246,12 +246,110 @@ import './style.css'
 //   }
 // }
 // alert( `Сумма:  ${sum}`);
-let a = +(prompt("Введите число", '') as string);
-let b = +(prompt("Введите второе число", '') as string);
-function numCase() {
-    if (a<b) {
-        return a;
-    } else return b;
-}
-numCase();
+// Задача 1
+// let a = +(prompt("Введите число", '') as string);
+// let b = +(prompt("Введите второе число", '') as string);
+// function numCase(a:any,b:any) {
+//     if (a<b) {
+//         alert(a);
+//     } else {
+//         alert(b)
+//     };
+//     return
+// }
+// numCase(a,b);
 
+//задача 2
+// let a = +(prompt("Введите число", '') as string);
+// let b = +(prompt("Введите степень", '') as string);
+// function calcuLate(a:any,b:any) {
+//     let result = a**b;
+//     alert(result)
+//     return
+// }
+// calcuLate(a,b);
+//задача 3
+// function getMax(n1:number,n2=0,n3=0,n4=0,n5=0) {
+//     return n1+n2+n3+n4+n5
+// }
+//задача 4
+// let n1 = +(prompt("Введите число", '') as string);
+// let n2 = +(prompt("Введите второе число", '') as string);
+// let sign = prompt("Введите знак", '') as string
+// function calc(n1:number,n2:number,sign:string) {
+//     switch(sign) {
+//         case '+':
+//             return n1+n2;
+//         case '-':
+//             return n1-n2;
+//         case '*':  
+//             return n1*n2;
+//         case '/':
+//             return n1/n2;
+//     }
+// }
+// alert(calc(n1,n2,sign))
+//задача 5
+// function showCalcTable(n:number) {
+//     for (let i = 2; i<10; i++) {
+//         console.log(n,'x',i,'=',n*i)        
+//     }
+// }
+
+// for (let i = 2; i<10; i++) {
+//     showCalcTable(i) // 2,3,4,5,6,7,8,9
+// }
+
+//Задача 6
+// function showNumber(from: number, to:number,oddOrEven:boolean) {
+//     for (let i = from; i <= to; i ++) {
+//         if (oddOrEven) {
+//             if (i%2==0) {
+//                 console.log(i)
+//             }
+//         } else {
+//             if (i%2!=0) {
+//                 console.log(i)
+//             }
+//         }
+//     }  
+// }
+
+// showNumber(1,10,true)
+// showNumber(10,20,false)
+//Задача 7
+
+// function visok(y:number) {    
+//     return y%4==0 || y%400==0
+// }
+
+// function dateToString(d:number,m:number,y:number) {
+//     const dd = d.toString().length!=1 ? d.toString() : '0'+d
+//     const mm = m.toString().length!=1 ? m.toString() : '0'+m
+//     return `${dd}.${mm}.${y}`
+// }
+
+// function getNextDate(d:number,m:number,y:number) {
+//     if(d==31) {
+//         d=1
+//         if(m==12) {
+//             m=0
+//             y++
+//         }
+//         m++
+//     } 
+//     if(d==30 && (m==4||m==6||m==9||m==11)) {
+//         d=1
+//         m++
+//     } 
+//     if(d==28 && m==2 && !visok(y)) {
+//         d=1
+//     }
+//     if(d==29 && m==2 && visok(y)) {
+//         d=1
+//     }
+//     return dateToString(d,m,y)
+// }
+
+// console.log(getNextDate(31,12,1987))
+// console.log(getNextDate(30,4,1987))
