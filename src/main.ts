@@ -246,7 +246,12 @@ import './style.css'
 //   }
 // }
 // alert( `Сумма:  ${sum}`);
-
-let i = 10;
-
 let a = +(prompt("Введите число", '') as string);
+let b = +(prompt("Введите второе число", '') as string);
+function numCase() {
+    if (a<b) {
+        return a;
+    } else return b;
+}
+numCase();
+
