@@ -353,3 +353,9 @@ import './style.css'
 
 // console.log(getNextDate(31,12,1987))
 // console.log(getNextDate(30,4,1987))
+//рекурсия Задача 1
+function pow(x:any, n:any) {
+    return (n == 1) ? x : (x * pow(x, n - 1));
+  }
+pow(2,2)
+console.log(pow(2,2))
