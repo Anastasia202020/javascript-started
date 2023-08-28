@@ -354,8 +354,52 @@ import './style.css'
 // console.log(getNextDate(31,12,1987))
 // console.log(getNextDate(30,4,1987))
 //рекурсия Задача 1
-function pow(x:any, n:any) {
-    return (n == 1) ? x : (x * pow(x, n - 1));
+// function pow(x:any, n:any) {
+//     return (n == 1) ? x : (x * pow(x, n - 1));
+//   }
+// pow(2,2)
+// console.log(pow(2,2))
+
+let userName = "";
+let toDos:string[] = [] 
+const appDiv = document.getElementById('app')
+
+function render() {
+  let isLogin = !!userName 
+  if (appDiv) appDiv.innerHTML = ''
+  //Создаем Html размеку либо так
+  // if (appDiv) appDiv.innerHTML += `<p> Добро пожаловать на сайт<p/>`
+  //Либо так
+  const pElement = document.createElement('p')
+  pElement.textContent = userName ? `${userName} добро пожаловать`:
+  `Добро пожаловать на сайт`
+
+  let phrase = ""
+  if (userName) {
+    phrase = userName + ',добро пожаловать'
+  } else {
+    phrase = "Добро пожаловать на сайт"
   }
-pow(2,2)
-console.log(pow(2,2))
+
+  if (appDiv) appDiv.appendChild(pElement)
+
+  const button = document.createElement('button')
+  button.textContent = isLogin ? 'Logout' : 'Login'
+  button.addEventListener('click', ()=>{
+    userName = isLogin ? '': "Anastasia"
+    toDos = isLogin ? [] : ['проснуться', 'позавтракать', 'умыться','работать','лечь спать']
+    render()
+  })
+  if (appDiv) appDiv.appendChild(button)
+  if (isLogin) {
+    const olList = document.createElement('ol')
+    for (let i=0;i<toDos.length; i++){
+      const listElement = document.createElement('li')
+      listElement.textContent = toDos[i]
+      olList.appendChild(listElement)
+    }
+    if (appDiv) appDiv.appendChild(olList)
+  }
+}
+render()
+
